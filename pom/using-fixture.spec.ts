@@ -1,7 +1,4 @@
-import { expect } from "@playwright/test";
 import { test } from "../fixtures/pomFixtures";
-import RegisterPage from "../pages/registerPage";
-import LoginPage from "../pages/loginPage";
 
 test("register test_01", async ({ page, baseURL, registerPage, userInfo }) => {
   await page.goto(`${baseURL}route=account/register`);
