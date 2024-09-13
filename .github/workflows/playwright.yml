@@ -1,25 +1,43 @@
 name: Playwright Tests
+
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
   test:
-    timeout-minutes: 60
     runs-on: ubuntu-latest
+
+    services:
+      docker:
+        image: mcr.microsoft.com/playwright:focal # Playwright Docker image
+        options: --privileged # Allows Docker to run browsers in the container
+        ports:
+          - 8080:8080
+        env:
+          DISPLAY: :99.0
+        volumes:
+          - /dev/shm:/dev/shm # Shared memory optimization
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: lts/*
-      - name: Install dependenciess
-        run: npm ci
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: npx playwright test
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 30
+
+      - name: Run Playwright Tests
+        run: |
+          npx playwright test --headless
