@@ -1,0 +1,263 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\playwright.config.ts",
+    "rootDir": "C:/Users/pc/Desktop/New folder (2)/testing/pl-lambdatest/pom",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/pc/Desktop/New folder (2)/testing/pl-lambdatest/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/pc/Desktop/New folder (2)/testing/pl-lambdatest/pom",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.46.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "addToCart.spec.ts",
+      "file": "addToCart.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "register test_01",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-13T10:46:50.089Z",
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "a1b2df80ffd2e8e27332-5e972fc0f2504e745673",
+          "file": "addToCart.spec.ts",
+          "line": 12,
+          "column": 6
+        },
+        {
+          "title": "login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-13T10:46:50.091Z",
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "a1b2df80ffd2e8e27332-45ce5941a45525c77dce",
+          "file": "addToCart.spec.ts",
+          "line": 30,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "using-fixture.spec.ts",
+      "file": "using-fixture.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "register test_01",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 2321,
+                  "error": {
+                    "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/register\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/register\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\pom\\using-fixture.spec.ts:7:14)\n    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\workerMain.js:339:15)\n    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\n    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\workerMain.js:331:22)\n    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)",
+                    "location": {
+                      "file": "C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\pom\\using-fixture.spec.ts",
+                      "column": 14,
+                      "line": 7
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\pom\\using-fixture.spec.ts",
+                        "column": 14,
+                        "line": 7
+                      },
+                      "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/register\", waiting until \"load\"\u001b[22m\n\n\n\u001b[2m    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\pom\\using-fixture.spec.ts:7:14)\u001b[22m\n\u001b[2m    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\workerMain.js:339:15)\u001b[22m\n\u001b[2m    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:17)\u001b[22m\n\u001b[2m    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\workerMain.js:331:22)\u001b[22m\n\u001b[2m    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-13T10:46:50.887Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\test-results\\using-fixture-register-test-01-chromium\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\pom\\using-fixture.spec.ts",
+                    "column": 14,
+                    "line": 7
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 5765,
+                  "error": {
+                    "message": "Error: page.waitForTimeout: Target page, context or browser has been closed",
+                    "stack": "Error: page.waitForTimeout: Target page, context or browser has been closed\n    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\pom\\using-fixture.spec.ts:17:14)\n    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\workerMain.js:339:9)\n    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\n    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\workerMain.js:331:7)\n    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)",
+                    "location": {
+                      "file": "C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\pom\\using-fixture.spec.ts",
+                      "column": 14,
+                      "line": 17
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\pom\\using-fixture.spec.ts",
+                        "column": 14,
+                        "line": 17
+                      },
+                      "message": "Error: page.waitForTimeout: Target page, context or browser has been closed\n\n\u001b[2m    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\pom\\using-fixture.spec.ts:17:14)\u001b[22m\n\u001b[2m    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\workerMain.js:339:9)\u001b[22m\n\u001b[2m    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m\n\u001b[2m    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\workerMain.js:331:7)\u001b[22m\n\u001b[2m    at C:\\Users\\pc\\Desktop\\New folder (C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\node_modules\\playwright\\lib\\worker\\testInfo.js:296:11)\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2024-09-13T10:46:57.218Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\test-results\\using-fixture-register-test-01-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\test-results\\using-fixture-register-test-01-chromium-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\pc\\Desktop\\New folder (2)\\testing\\pl-lambdatest\\2)\\testing\\pl-lambdatest\\pom\\using-fixture.spec.ts",
+                    "column": 14,
+                    "line": 17
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "03b280e714b5b2e5be42-9f3b8fa18e4fcf50b3f4",
+          "file": "using-fixture.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-09-13T10:46:49.906Z",
+    "duration": 14243.073,
+    "expected": 0,
+    "skipped": 2,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
